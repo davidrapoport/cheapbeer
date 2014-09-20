@@ -1,0 +1,327 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ma",
+				"makedirs  (function)"
+			],
+			[
+				"get",
+				"getElementsByTagName  (function)"
+			],
+			[
+				"prev",
+				"previousNode"
+			],
+			[
+				"readli",
+				"readlines  (function)"
+			],
+			[
+				"p",
+				"passphrase"
+			],
+			[
+				"pri",
+				"printStackTrace"
+			],
+			[
+				"iv",
+				"ivspec"
+			],
+			[
+				"rand",
+				"randint"
+			],
+			[
+				"up",
+				"upload_folder"
+			],
+			[
+				"de",
+				"defaults"
+			],
+			[
+				"s",
+				"searcher"
+			],
+			[
+				"ur",
+				"uri_or_path"
+			],
+			[
+				"multi",
+				"multivalued"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "README.md",
+			"settings":
+			{
+				"buffer_size": 42,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"",
+				"Set Syntax: HTML (Rails)"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 602.0
+	},
+	"console":
+	{
+		"height": 139.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/david/Videos/The.Royal.Tenenbaums.XviD.DVD-Rip/app.py",
+		"/home/david/Documents/F2014/310/a1/cshell.c",
+		"/home/david/Desktop/code/snake.css",
+		"/home/david/Desktop/code/snake.js",
+		"/home/david/Desktop/code/snake.html",
+		"/home/david/Desktop/code/musicFix.py",
+		"/home/david/Documents/LogP/ParsCit/ParsCit/bin/python_server/app.py",
+		"/home/david/Desktop/code/prac.hs",
+		"/home/david/Desktop/code/prac.hy",
+		"/home/david/PycharmProjects/Texting/models.py",
+		"/home/david/PycharmProjects/Texting/Decrypt.java",
+		"/home/david/PycharmProjects/Texting/textService.py",
+		"/home/david/.cache/.fr-et4LcL/fuckit-4.8.0/fuckit.py",
+		"/home/david/Desktop/code/play.lisp",
+		"/home/david/Desktop/music.py",
+		"/home/david/PycharmProjects/Texting/decrypt.java",
+		"/home/david/Desktop/op.html",
+		"/home/david/bin/solr-4.8.1/example/solr/collection1/conf/solrconfig.xml",
+		"/home/david/bin/solr-4.8.1/logp/solr/collection1/conf/solrconfig.xml",
+		"/home/david/bin/solr-4.8.1/example/solr/solr.xml",
+		"/home/david/bin/solr-4.8.1/logp/solr/solr.xml",
+		"/home/david/bin/solr-4.8.1/example/solr/collection1/conf/schema.xml",
+		"/home/david/Desktop/Eliot/hello.py",
+		"/home/david/Desktop/Eliot/fizzbuzz.py",
+		"/home/david/Desktop/Eliot/Eliot.java",
+		"/home/david/Desktop/Eliot/phonebook.py",
+		"/home/david/Desktop/Eliot/bottles.py",
+		"/home/david/Desktop/six.py",
+		"/home/david/Desktop/Eliot/calculator.py",
+		"/home/david/.cache/.fr-Aj79A1/Eliot/calculator.py",
+		"/home/david/Desktop/Eliot.java",
+		"/home/david/Desktop/fizzbuzz.py",
+		"/home/david/Desktop/hello.py",
+		"/home/david/Desktop/bottles.py",
+		"/home/david/Downloads/first program.py",
+		"/home/david/double.hs",
+		"/home/david/bin/lucene-4.8.0/SearchFiles.java",
+		"/home/david/Documents/LogP/www/html/AngularPractice/dummy.json",
+		"/home/david/Documents/LogP/www/html/AngularPractice/refs.json",
+		"/home/david/Documents/LogP/www/html/AngularPractice/server.py",
+		"/var/www/html/daveAng/intro-to-angularjs/app/js/app.js",
+		"/var/www/html/daveAng/intro-to-angularjs/login.html",
+		"/var/www/html/daveAng/intro-to-angularjs/index.html",
+		"/home/david/Documents/LogP/www/html/AngularPractice/JS/angprac.js",
+		"/home/david/Documents/LogP/AcademicPapers/out.json",
+		"/home/david/Documents/LogP/ParsCit/ParsCit/bin/ParsCitServer.rb",
+		"/home/david/Documents/LogP/www/html/AngularPractice/index.html",
+		"/home/david/Documents/LogP/AcademicPaper.java",
+		"/home/david/Documents/LogP/www/html/AngularPractice/show.html",
+		"/home/david/Documents/LogP/www/html/AngularPractice/JS/angular-route.js",
+		"/home/david/Documents/LogP/AngularPractice/JS/angprac.js",
+		"/home/david/Documents/LogP/AngularPractice/index.html",
+		"/home/david/Documents/LogP/AngularPractice/JS/angular.min.js",
+		"/home/david/.config/sublime-text-3/Packages/Default/Default (Linux).sublime-keymap",
+		"/home/david/Documents/LogP/ParsCit/ParsCit/bin/ParsCitClient.rb",
+		"/home/david/Documents/LogP/ParsCit/ParsCit/bin/parscit-client.pl",
+		"/home/david/bin/solr-4.8.1/logp/solr/collection1/conf/schema.xml",
+		"/home/david/bin/solr-4.8.1/logp/solr/collection1/conf/DIHconfig.xml",
+		"/home/david/Documents/LogP/ParsCit/ParsCit/wsdl/ParsCit.wsdl",
+		"/home/david/Documents/LogP/ParsCit/ParsCit/demodata/logp1.txt"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			" svg",
+			"/select",
+			"./citeExtract.pl",
+			"reference",
+			"unique",
+			"reference",
+			"field name",
+			"field",
+			"solr-da"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"\" + path_to_citeExtract +\""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": false,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "README.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 42,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								42,
+								42
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "cheapbear.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"sn",
+				"~/Desktop/code/snake.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
