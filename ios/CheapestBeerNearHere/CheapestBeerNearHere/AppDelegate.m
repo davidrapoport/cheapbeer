@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "DepListTableViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,8 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    DepListTableViewController *depListViewController = [[DepListTableViewController alloc] init];
+    self.window.rootViewController = depListViewController;
     return YES;
 }
 

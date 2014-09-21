@@ -10,18 +10,21 @@
 
 @interface FirstViewController ()
 
+@property (nonatomic, weak) IBOutlet UILabel *distanceLabel;
+
+@property (nonatomic) IBOutlet UIStepper *stepper;
+
+
 @end
 
 @implementation FirstViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)stepperValueChanged:(UIStepper *)sender {
+    
+    [self.stepper setValue:sender.value];
+    
+    self.distanceLabel.text = [@((double)sender.value) stringValue];
+    
 }
 
 @end
