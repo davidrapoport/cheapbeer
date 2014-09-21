@@ -1,40 +1,42 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>CBNH</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <!-- build:css(.) styles/vendor.css -->
-    <!-- bower:css -->
-    <!-- endbower -->
-    <!-- endbuild -->
-    <!-- build:css(.tmp) styles/main.css -->
-    <link rel="stylesheet" href="styles/main.scss">
-    <!-- endbuild -->
+    <script src="static/scripts/angular.js"></script>
+     <script src="static/scripts/ngroute.js"></script>
+      <script src="static/scripts/jQuery_v1.11.1.js"></script>
+     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="/static/styles/bootstrap.css">
+
+    <link rel="stylesheet" href="/static/styles/main.css">
+
+
+
   </head>
-  <body ng-app="webApp">
+  <body ng-app="beer">
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <!-- Add your site or application content here -->
-    <div class="container">
+    <div class="container" ng-controller="MainCtrl as main">
       <div class="header">
-        <ul class="nav nav-pills pull-right">
-          <li class="active"><a ng-href="#">Home</a></li>
-          <li><a ng-href="#">About</a></li>
-          <li><a ng-href="#">Contact</a></li>
+      <nav class="navbar navbar-default navbar-static-top" role="navigation" >
+        <ul class="nav nav-pills">
+          <li class="active"><a href="/">Home</a></li>
+          <li ><a href="#/map" >Map</a></li>
+          <li><a href="#/list">List</a></li>
         </ul>
-        <h3 class="text-muted">web</h3>
+        </nav >
       </div>
-
-      <div ng-include="'views/main.html'" ng-controller="MainCtrl"></div>
-
-      <div class="footer">
+      <ng-view>
+  </ng-view>
+     <!--  <div class="footer">
         <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
-      </div>
+      </div> -->
     </div>
 
 
@@ -60,8 +62,8 @@
     <!-- endbuild -->
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
-        <script src="scripts/app.js"></script>
-        <script src="scripts/controllers/main.js"></script>
+        <script src="/static/scripts/app.js"></script>
+        <script src="/static/scripts/controllers/main.js"></script>
         <!-- endbuild -->
 </body>
 </html>

@@ -6,7 +6,8 @@ import datetime
 import json
 import os
 
-app = Flask(__name__, static_url_path='/static/')
+app = Flask(__name__)
+app._static_folder = "static/app/"
 CENTER_LAT=45.50000
 CENTER_LONG=-73.5667
 DEFAULT_RAD=5
@@ -21,11 +22,12 @@ allDeps=session.query(Store).all()
 
 @app.route('/')
 def index():
-	return redirect(url_for('appV'))
+	return app.send_static_file("index.html")
 
-@app.route('/app')
-def appV():
-	return app.send_static_file("app/index.html")
+@app.route('/<path:path>')
+def catch_all(path):
+    return app.send_static_file(path)
+
 
 @app.route('/deps', methods=['GET'])
 def getAllDeps():
@@ -34,7 +36,7 @@ def getAllDeps():
 	rad= float(request.args.get('rad',DEFAULT_RAD))
 	filteredDeps=queryForDeps(lat,longit,rad)
 	filteredDeps= list(map(lambda dep : {"name":dep.name, "address":dep.address,
-	 "id":dep.id, "products":[], "lat":dep.lat, "long":dep.longit}, filteredDeps))
+	 "id":dep.id, "products":[], "lat":dep.lat, "long":dep.longit, "dist":dep.dist}, filteredDeps))
 	session = DBSession()
 	for dep in filteredDeps:
 		products = session.query(Product).filter(Product.store_id == dep['id'])
@@ -76,13 +78,13 @@ def updatePrice():
 
 
 def queryForDeps(la,lo,r):
-	return [dep for dep in allDeps if euclidian(la, lo, dep, r)]
+	return [dep for dep in allDeps if euclidian(la, lo, dep, r)][:20]
 
 def euclidian(lat,lon,dep,rad):
-	return haversine(lon, lat, dep.longit, dep.lat) < rad
+	return haversine(lon, lat, dep) < rad
 
 from math import radians, cos, sin, asin, sqrt
-def haversine(lon1, lat1, lon2, lat2):
+def haversine(lon1, lat1, dep):
     """
     Calculate the great circle distance between two points 
     on the earth (specified in decimal degrees)
@@ -99,9 +101,10 @@ def haversine(lon1, lat1, lon2, lat2):
     # # 6367 km is the radius of the Earth
     # km = 6367 * c
     R = 6371 
-    x = (lon2 - lon1) * cos( 0.5*(lat2+lat1) )
-    y = lat2 - lat1
+    x = (dep.longit - lon1) * cos( 0.5*(dep.lat+lat1) )
+    y = dep.lat - lat1
     d = R * sqrt( x*x + y*y )
+    dep.dist=d
     return d
 
 if __name__ == '__main__':

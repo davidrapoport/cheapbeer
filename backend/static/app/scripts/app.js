@@ -8,8 +8,5 @@
  *
  * Main module of the application.
  */
-angular
-  .module('webApp', [
-    'ngCookies',
-    'ngSanitize'
-  ]);
+angular.module('webApp', [ 'beer']);
+
